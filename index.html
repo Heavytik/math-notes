@@ -62,6 +62,40 @@
             #Step8 {
                 visibility: hidden;
             }
+
+            @media only screen and (max-width: 500px) {
+                .item1 {
+                    grid-column: 1 / span 2;
+                }
+
+                .item2 {
+                    grid-column: 1 / span 2;
+                }
+
+                .item3 {
+                    grid-column: 1 / span 2;
+                }
+
+                .item4 {
+                    grid-column: 1 / span 2;
+                }
+
+                .item5 {
+                    grid-column: 1 / span 2;
+                }
+
+                .item6 {
+                    grid-column: 1 / span 2;
+                }
+
+                .item7 {
+                    grid-column: 1 / span 2;
+                }
+
+                .item8 {
+                    grid-column: 1 / span 2;
+                }
+            }
         </style>
         <style id="hidden">
             body {
@@ -76,10 +110,10 @@
         <button onclick="takeStep()" id="step">Next</button>
         <div class="grid-container">
 
-            <div class="grid-item">
+            <div class="item1">
                 $$\cssId{Step1}{2x - 1 = 9}$$
             </div>
-            <div class="grid-item">
+            <div class="item2">
                 <div id="Step2">
                     <p>Täytyy lisätä +1 molempiin lausekkeisiin, 2x - 1 sekä 9.</p>
                     <p>(voidaan merkitä || +1 )
@@ -88,28 +122,28 @@
 
             </div>
 
-            <div class="grid-item">
+            <div class="item3">
                 $$\cssId{Step3}{2x - 1 + 1 = 9 + 1}$$
             </div>
-            <div class="grid-item">
+            <div class="item4">
                 <p id="Step4">
                     Sievennetään lausekkeita.
                 </p>
             </div>
 
-            <div class="grid-item">
+            <div class="item5">
                 $$\cssId{Step5}{2x = 10}$$
             </div>
-            <div class="grid-item">
+            <div class="item6">
                 <div id="Step6">
                     <p>Jaetaan molemmat lausekkeet kahdella.</p>
                     <p>(voidaan merkitä || :2 )</p>
                 </div>
             </div>
-            <div class="grid-item">
+            <div class="item7">
                 $$\cssId{Step7}{x = 5}$$
             </div>
-            <div class="grid-item">
+            <div class="item8">
                 <p id="Step8">
                     Yhtälön ratkaisu on valmis.
                 </p>
