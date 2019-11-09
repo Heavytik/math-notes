@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html">
+
+    <head>
+        <title>Math notes</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+        <script type="text/javascript" id="MathJax-script" async
+            src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+            </script>
+        <script>
+            MathJax = {
+                tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
+                chtml: {
+                    displayAlign: 'left'
+                },
+                startup: {
+                    ready: function () {
+                        //
+                        //  Do the usual startup (which does a typeset)
+                        //
+                        MathJax.startup.defaultReady();
+                        //
+                        //  When that is all done, un-hide the page
+                        //
+                        MathJax.startup.promise.then(function () {
+                            document.getElementById("hidden").disabled = true;
+                        });
+                    }
+                }
+            };
+        </script>
+        <script type="text/javascript" src="main.js">
+
+
+        </script>
+        <style>
+            body {
+                font-size: 2em;
+                height: 100%;
+                background-color: pink;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: auto auto;
+                padding: 10px;
+            }
+
+            button {
+                height: 100px;
+                min-width: 100px;
+            }
+
+            #Step1,
+            #Step2,
+            #Step3,
+            #Step4,
+            #Step5,
+            #Step6,
+            #Step7,
+            #Step8 {
+                visibility: hidden;
+            }
+        </style>
+        <style id="hidden">
+            body {
+                visibility: hidden;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Yhtalonratkaisu</h1>
+        <button onclick="backStep()" id="reset">Previous</button>
+        <button onclick="takeStep()" id="step">Next</button>
+        <div class="grid-container">
+
+            <div class="grid-item">
+                $$\cssId{Step1}{2x - 1 = 9}$$
+            </div>
+            <div class="grid-item">
+                <p id="Step2">
+                    Taytyy lisata +1 molempiin lausekkeisiin, 2x - 1 seka 9.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                $$\cssId{Step3}{2x - 1 + 1 = 9 + 1}$$
+            </div>
+            <div class="grid-item">
+                <p id="Step4">
+                    Seuraavaksi sievennetaan.
+                </p>
+            </div>
+
+            <div class="grid-item">
+                $$\cssId{Step5}{2x = 10}$$
+            </div>
+            <div class="grid-item">
+                <p id="Step6">
+                    Jaetaan molemmat lausekkeet kahdella.
+                </p>
+            </div>
+            <div class="grid-item">
+                $$\cssId{Step7}{x = 5}$$
+            </div>
+            <div class="grid-item">
+                <p id="Step8">
+                    Kun molemmat yhtalot on jaettu kahdella, yhtalon ratkaisu on valmis.
+                </p>
+            </div>
+
+        </div>
+
+
+        </div>
+
+    </body>
+
+    </html>
