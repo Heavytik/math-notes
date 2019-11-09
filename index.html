@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html">
+    <!-- https://kind-payne-853f03.netlify.com/ -->
 
     <head>
         <title>Math notes</title>
@@ -11,7 +12,7 @@
             MathJax = {
                 tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] },
                 chtml: {
-                    displayAlign: 'left'
+                    displayAlign: 'center'
                 },
                 startup: {
                     ready: function () {
@@ -70,7 +71,7 @@
     </head>
 
     <body>
-        <h1>Yhtalonratkaisu</h1>
+        <h1>Yhtälönratkaisu (esimerkki)</h1>
         <button onclick="backStep()" id="reset">Previous</button>
         <button onclick="takeStep()" id="step">Next</button>
         <div class="grid-container">
@@ -79,9 +80,12 @@
                 $$\cssId{Step1}{2x - 1 = 9}$$
             </div>
             <div class="grid-item">
-                <p id="Step2">
-                    Taytyy lisata +1 molempiin lausekkeisiin, 2x - 1 seka 9.
-                </p>
+                <div id="Step2">
+                    <p>Täytyy lisätä +1 molempiin lausekkeisiin, 2x - 1 sekä 9.</p>
+                    <p>(voidaan merkitä || +1 )
+                    </p>
+                </div>
+
             </div>
 
             <div class="grid-item">
@@ -89,7 +93,7 @@
             </div>
             <div class="grid-item">
                 <p id="Step4">
-                    Seuraavaksi sievennetaan.
+                    Sievennetään lausekkeita.
                 </p>
             </div>
 
@@ -97,16 +101,17 @@
                 $$\cssId{Step5}{2x = 10}$$
             </div>
             <div class="grid-item">
-                <p id="Step6">
-                    Jaetaan molemmat lausekkeet kahdella.
-                </p>
+                <div id="Step6">
+                    <p>Jaetaan molemmat lausekkeet kahdella.</p>
+                    <p>(voidaan merkitä || :2 )</p>
+                </div>
             </div>
             <div class="grid-item">
                 $$\cssId{Step7}{x = 5}$$
             </div>
             <div class="grid-item">
                 <p id="Step8">
-                    Kun molemmat yhtalot on jaettu kahdella, yhtalon ratkaisu on valmis.
+                    Yhtälön ratkaisu on valmis.
                 </p>
             </div>
 
